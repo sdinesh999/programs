@@ -1,0 +1,44 @@
+using System;
+namespace Test
+{
+	 public class Calculator
+	{
+		public static void Main(String[] args)
+		{
+			int a;
+			int b;
+			int result;
+			String operation;
+			Console.Write("enter the first num");
+			a = Convert.ToInt32(Console.ReadLine());
+		    Console.Write("enter the second num");
+			b = Convert.ToInt32(Console.ReadLine());
+		    Console.Write("enter the operation x + - *");
+			operation = Console.ReadLine();
+			
+			switch(operation)
+			{
+				case "x":
+					result = a * b;
+					Console.WriteLine(a + "/" + b + "=" + result);
+			        Console.ReadLine();
+					break;
+				case "/":
+					result = a / b;
+					Console.WriteLine(a + "/" + b + "=" + result);
+			        Console.ReadLine();
+					break;
+				case "+":
+					result = a + b;
+					Console.WriteLine(a + "+" + b + "=" + result);
+			        Console.ReadLine();
+					break;
+				case "-":
+					result = a - b;
+					Console.WriteLine(a + "-" + b + "=" + result);
+			        Console.ReadLine();
+					break;
+			}
+		}
+	}
+}
